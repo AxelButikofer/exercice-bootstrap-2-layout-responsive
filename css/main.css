@@ -24,8 +24,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  font-size: 1rem;
-  line-height: 1.25;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a {
@@ -37,4 +38,17 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+  margin-bottom: 16px;
 }
